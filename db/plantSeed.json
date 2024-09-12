@@ -1,0 +1,42 @@
+[
+	{
+		"plantName": "Basil",
+		"sciName": "Ocimum basilicum",
+		"size": "Small",
+		"description": "edible",
+		"waterLvl": "Moderate",
+		"lightLvl": "Direct sunlight"
+	},
+	{
+		"plantName": "Snake Plant",
+		"sciName": "Sansevieria trifasciata",
+		"size": "Medium",
+		"description": "succulent",
+		"waterLvl": "Low",
+		"lightLvl": "Low to bright indirect light"
+	},
+	{
+		"plantName": "Peace Lily",
+		"sciName": "Spathiphyllum",
+		"size": "Medium to Large",
+		"description": "flower",
+		"waterLvl": "High",
+		"lightLvl": "Low to medium indirect light"
+	},
+	{
+		"plantName": "Pothos",
+		"sciName": "Epipremnum aureum",
+		"size": "Medium",
+		"description": "leafy",
+		"waterLvl": "Moderate",
+		"lightLvl": "Low to bright indirect light"
+	},
+	{
+		"plantName": "ZZ Plant",
+		"sciName": "Zamioculcas zamiifolia",
+		"size": "Small to Medium",
+		"description": "succulent",
+		"waterLvl": "Low",
+		"lightLvl": "Low to bright indirect light"
+	}
+]
