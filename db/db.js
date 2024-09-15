@@ -1,6 +1,5 @@
 import Sequelize from "sequelize";
-import PlantModel from "./Plant.js";
-import plantSeed from "./plantSeed.json" assert { type: "json" };
+import { PlantModel, PlantData } from "./Plant.js";
 
 let db;
 if (process.env.DATABASE_URL === undefined) {
@@ -9,7 +8,7 @@ if (process.env.DATABASE_URL === undefined) {
 		logging: false,
 	});
 } else {
-	const db = new Sequelize(process.env.DATABASE_URL, {
+	db = new Sequelize(process.env.DATABASE_URL, {
 		logging: false,
 	});
 }
@@ -29,7 +28,7 @@ const connectToDB = async () => {
 
 		const existingPlants = await Plant.findAll();
 		if (existingPlants.length === 0) {
-			for (const plantData of plantSeed) {
+			for (const plantData of PlantData) {
 				await Plant.create(plantData);
 			}
 		}
